@@ -113,7 +113,6 @@ const NewsletterPreviewContent: React.FC<{
         subtitleClasses = clsx(subtitleClasses, 'text-[1.7rem] tracking-tight');
     }
 
-
     return (
         <div className="relative flex grow flex-col">
             <div className="absolute inset-0 m-5 flex items-center justify-center">
@@ -178,7 +177,7 @@ const NewsletterPreviewContent: React.FC<{
 
                             <div className={clsx(
                                 'max-w-[600px] border-b border-grey-200 pb-5 leading-[1.7] text-black',
-                                bodyFontCategory === 'serif' ? 'font-serif text-[1.8rem]' : 'tracking-tight text-[1.7rem]',
+                                bodyFontCategory === 'serif' ? 'font-serif text-[1.8rem]' : 'text-[1.7rem] tracking-tight',
                                 (showFeatureImage || showPostTitleSection) ? '' : 'pt-8'
                             )} style={{borderColor: secondaryBorderColor}}>
                                 <p className="mb-5" style={{color: textColor}}>This is what your content will look like when you send one of your posts as an email newsletter to your subscribers.</p>
